@@ -1,0 +1,8 @@
+<h2>My Drivers</h2>
+<ul class="drivers">
+  <li *ngFor="let driver of drivers">
+    <a routerLink="/detail/{{driver.id}}">
+      <span class="badge">{{driver.id}}. </span> {{driver.name}} - {{driver.age}}
+    </a>
+  </li>
+</ul>

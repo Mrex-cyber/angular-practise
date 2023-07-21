@@ -1,0 +1,5 @@
+<label for="item-input">Add an driver:</label>
+<input type="number" id="item-input" #driverId>
+<input type="text" id="item-input" #driverName>
+<input type="number" id="item-input" #driverAge>
+<button type="button" (click)="AddNewDriver(driverId.value, driverName.value, driverAge.value)">Add to list</button>

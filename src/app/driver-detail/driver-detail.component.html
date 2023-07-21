@@ -1,0 +1,10 @@
+<div *ngIf="driver">
+  <h2>{{driver.name | uppercase}} Details</h2>
+  <div>id: {{driver.id}}</div>
+  <div>
+    <label for="driver-name">Driver name: </label>
+    <input id="driver-name" [(ngModel)]="driver.name" placeholder="name" />
+    <input id="driver-name" [(ngModel)]="driver.age" placeholder="name" />
+  </div>
+  <button type="button" (click)="goBack()">Go back</button>
+</div>

@@ -1,0 +1,5 @@
+<h2>Top Drivers</h2>
+<div class="drivers-menu">
+  <a *ngFor="let driver of drivers"
+  routerLink="/detail/{{driver.id}}" >{{driver.name}} - {{driver.age}}</a>
+</div>
